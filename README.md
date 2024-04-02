@@ -32,7 +32,7 @@ Install using script __(root required)__
 ```
 curl https://raw.githubusercontent.com/nillbot/PrivateBB_Scripts/main/subdomain_finder.sh > /usr/local/bin/subdomain_finder.sh && \
 ln -s /usr/local/bin/subdomain_finder.sh /usr/local/bin/subscanner && \
-chmod +x /usr/local/bin/subcanner
+chmod +x /usr/local/bin/subscanner
 ```
 
 then type `subscanner` anywhere in the terminal to access. Usage:
