@@ -3,7 +3,13 @@
 if [ $# -ne 1 ] && [ $# -ne 2 ]; then
     echo ""
     echo "Usage: $0 <target_domain> [output_directory]"
-    echo "If output_directory is not provided, it defaults to the target_domain name."
+    echo ""
+    echo "Examples:"
+    echo "  subscan example.com"
+    echo "  subscan example.com example_folder"
+    echo ""
+    echo "If output_directory is not provided, it defaults to the target_domain name"
+    
     exit 1
 fi
 
