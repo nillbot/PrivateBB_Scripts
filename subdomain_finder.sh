@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$#" -ne 1 ]; then
+if [ $# -ne 1 ] || [ $# -ne 2 ]; then
     echo ""
     echo "Usage: $0 <target_domain> [output_directory]"
     echo "If output_directory is not provided, it defaults to the target_domain name."
