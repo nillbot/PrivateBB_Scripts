@@ -99,5 +99,3 @@ echo ""
 print_info "Testing for domains running HTTP server"
 cat "$output_dir/subdomains.txt" | "httpx" -silent > "$output_dir/subdomains_http.txt" || handle_error "Failed to test for HTTP servers."
 print_success "http subdomains saved to $output_dir/subdomains_http.txt"
-
-echo ""
