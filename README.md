@@ -30,8 +30,8 @@ options:
 Install using script __(root required)__
 
 ```
-curl https://raw.githubusercontent.com/nillbot/PrivateBB_Scripts/main/subdomain_finder.sh > /usr/local/bin/subdomain_finder.sh && \
-ln -s /usr/local/bin/subdomain_finder.sh /usr/local/bin/subscan && \
+curl https://raw.githubusercontent.com/nillbot/PrivateBB_Scripts/main/subscanner.sh > /usr/local/bin/subscanner.sh && \
+ln -s /usr/local/bin/subscanner.sh /usr/local/bin/subscan && \
 chmod +x /usr/local/bin/subscan
 ```
 
