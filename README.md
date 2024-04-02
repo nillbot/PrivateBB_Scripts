@@ -31,11 +31,19 @@ Install using script __(root required)__
 
 ```
 curl https://raw.githubusercontent.com/nillbot/PrivateBB_Scripts/main/subdomain_finder.sh > /usr/local/bin/subdomain_finder.sh && \
-ln -s /usr/local/bin/subdomain_finder.sh /usr/local/bin/subscanner && \
-chmod +x /usr/local/bin/subscanner
+ln -s /usr/local/bin/subdomain_finder.sh /usr/local/bin/subscan && \
+chmod +x /usr/local/bin/subscan
 ```
 
-then type `subscanner` anywhere in the terminal to access. Usage:
+then type `subscan` anywhere in the terminal to access
 ```
-subscanner example.com
+$ subscan
+
+Usage: /usr/local/bin/subscan <target_domain> [output_directory]
+
+Examples:
+  subscan example.com
+  subscan example.com example_folder
+
+If output_directory is not provided, it defaults to the target_domain name
 ```
