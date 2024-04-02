@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $# -ne 1 ] || [ $# -ne 2 ]; then
+if [ $# -ne 1 ] && [ $# -ne 2 ]; then
     echo ""
     echo "Usage: $0 <target_domain> [output_directory]"
     echo "If output_directory is not provided, it defaults to the target_domain name."
@@ -58,7 +58,7 @@ fi
 mkdir -p "$output_dir"
 mkdir -p "$output_dir/scan_output"
 echo ""
-print_ok "Directory $output_dir created"
+print_info "Directory $output_dir created"
 echo ""
 
 # Use gau to find subdomains and save to gau.txt
