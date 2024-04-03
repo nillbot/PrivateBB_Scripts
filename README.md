@@ -47,3 +47,9 @@ Examples:
 
 If output_directory is not provided, it defaults to the target_domain name
 ```
+
+You can also scan a list of domains using the following command
+
+```
+while IFS= read -r domain; do subscan $domain subscan_$domain; done < domains.txt
+```
