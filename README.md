@@ -53,3 +53,11 @@ You can also scan a list of domains using the following command
 ```
 while IFS= read -r domain; do subscan $domain subscan_$domain; done < domains.txt
 ```
+
+Or Run with parallel processing (threading)
+
+```
+< domains.txt xargs -n 1 -P 5 -I {} sh -c 'subscan {} subscan_{}'
+```
+
+`-P` defines the amount of max threads to use `5` in this case
